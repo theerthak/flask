@@ -20,7 +20,7 @@ pipeline
          stage(deploy){
              steps{
                  script{
-                     sh ''' docker run -itd --name flask -p 80:80 flask'''
+                     sh ''' docker run -itd --name flask -p 80:5000 flask'''
                  }
              }
          }
